@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nurasha Prabashwara - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .news-card {
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .news-card:hover {
+      background-color: #2c2c2c;
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    }
+  </style>
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/64/000000/shield.png" />
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-gray-900 shadow z-50" data-aos="fade-down" data-aos-duration="800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center p-4">
+      <h1 class="text-indigo-400 font-bold text-xl">Nurasha Prabashwara</h1>
+      <nav class="w-full sm:w-auto mt-4 sm:mt-0">
+        <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300 font-medium text-center sm:text-left">
+          <li><a href="#home" class="hover:text-indigo-400">Home</a></li>
+          <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+          <li><a href="news.html" class="hover:text-indigo-400">News</a></li>
+          <li><a href="contact.html" class="hover:text-indigo-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-32 relative"
+    style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center;"
+    data-aos="fade-up" data-aos-duration="1500">
+    <div class="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+    <div class="relative z-10 max-w-3xl text-white px-4">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Nurasha Prabashwara</h2>
+      <p class="text-lg md:text-xl mb-8">Software Engineering & Cyber Security Student passionate about creating secure, user-friendly digital experiences.</p>
+    </div>
+  </section>
+
+  <!-- About Section with Profile Photo -->
+  <section id="about" class="py-16 px-4 bg-black" data-aos="fade-up" data-aos-duration="1000">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-indigo-400 mb-6">About Me</h3>
+      <div class="flex flex-col items-center space-y-6">
+        <img 
+          src="WhatsApp Image 2025-07-23 at 00.06.28_4ec9d64d.jpg" 
+          alt="Nurasha Prabashwara" 
+          class="w-40 h-40 rounded-full object-cover border-4 border-indigo-500 shadow-lg"
+        />
+        <p class="text-gray-300 text-lg leading-relaxed max-w-2xl">
+          I’m Nurasha Prabashwara, a passionate student in Software Engineering and Cyber Security. I love crafting digital solutions that are both secure and user-friendly. I always strive to improve and stay updated with the latest trends in technology and cyber defense.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualifications Section -->
+  <section id="qualifications" class="py-16 px-4 bg-gray-900" data-aos="fade-right" data-aos-duration="1000">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-indigo-400 mb-8 text-center">Qualifications</h3>
+      <ul class="space-y-6 text-gray-300 text-lg">
+        <li class="border-l-4 border-indigo-500 pl-4">
+          I’m a passionate and driven Software Engineering undergraduate with a strong foundation in programming, software development, and problem-solving. I thrive on turning complex challenges into clean, efficient solutions through code. Proficient in Python, Java, and C++, with hands-on experience in web development (HTML, CSS, JavaScript), database management using SQL, and version control with Git.
+          <br><br>
+          Alongside software development, I’m deeply interested in cybersecurity, focusing on building secure systems and learning how to identify and prevent digital threats. I’m continually exploring the latest in ethical hacking, system hardening, and secure coding practices to enhance my skill set in today’s ever-evolving tech landscape.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 px-4 bg-gray-900" data-aos="fade-right" data-aos-duration="1000">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold text-indigo-400 mb-8 text-center">Skills</h3>
+      <div class="space-y-6">
+        <div>
+          <div class="flex justify-between mb-1 font-semibold">
+            <span>Cyber Security</span><span>85%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-4">
+            <div class="bg-indigo-500 h-4 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-1 font-semibold">
+            <span>Software Engineering</span><span>90%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-4">
+            <div class="bg-indigo-500 h-4 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-1 font-semibold">
+            <span>Programming (Python, JavaScript)</span><span>80%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-4">
+            <div class="bg-indigo-500 h-4 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4 bg-cover bg-center relative"
+    style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80');"
+    data-aos="fade-left" data-aos-duration="1000">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative max-w-6xl mx-auto text-white">
+      <h3 class="text-3xl font-bold mb-10 text-center">Projects</h3>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-gray-900 bg-opacity-80 rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project One" class="rounded mb-4 object-cover h-48 w-full" />
+          <h4 class="font-semibold text-xl mb-2">Project One</h4>
+          <p class="flex-grow">A web app to help manage tasks securely and efficiently.</p>
+        </div>
+        <div class="bg-gray-900 bg-opacity-80 rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project Two" class="rounded mb-4 object-cover h-48 w-full" />
+          <h4 class="font-semibold text-xl mb-2">Project Two</h4>
+          <p class="flex-grow">A cybersecurity tool to monitor network threats in real-time.</p>
+        </div>
+        <div class="bg-gray-900 bg-opacity-80 rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+          <img src="pexels-harold-vasquez-853421-2653362.jpg" alt="Project Three" class="rounded mb-4 object-cover h-48 w-full" />
+          <h4 class="font-semibold text-xl mb-2">Project Three</h4>
+          <p class="flex-grow">Developed a secure login system with multi-factor authentication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="py-16 px-4 bg-black" data-aos="fade-up" data-aos-duration="1000">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-indigo-400 mb-10 text-center">Cyber Security News</h3>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="news-card p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-duration="800">
+          <h4 class="font-semibold text-xl mb-2">New Malware Alert</h4>
+          <p class="mb-4">A new malware strain has been discovered affecting cloud-based systems. Stay alert and update your defenses.</p>
+          <a href="news.html" class="text-indigo-400 hover:underline font-semibold">Read More →</a>
+        </div>
+        <div class="news-card p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+          <h4 class="font-semibold text-xl mb-2">AI in Cyber Security</h4>
+          <p class="mb-4">Discover how artificial intelligence is transforming cyber threat detection and prevention.</p>
+          <a href="news.html" class="text-indigo-400 hover:underline font-semibold">Read More →</a>
+        </div>
+        <div class="news-card p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          <h4 class="font-semibold text-xl mb-2">Phishing Scam Tactics</h4>
+          <p class="mb-4">Learn about the latest phishing tactics and how to protect yourself from these scams.</p>
+          <a href="news.html" class="text-indigo-400 hover:underline font-semibold">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section id="contact-info" class="py-16 px-4 bg-gray-800 text-white" data-aos="fade-up" data-aos-duration="1000">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-indigo-400 mb-6">Contact Me</h3>
+      <p class="mb-4 text-lg">📞 <strong>Phone:</strong> 0752055303</p>
+      <p class="mb-4 text-lg">📧 <strong>Email:</strong> <a href="mailto:darmakeerthiprabashwara@gmail.com" class="text-indigo-400 hover:underline">darmakeerthiprabashwara@gmail.com</a></p>
+      <p class="text-lg">🏠 <strong>Address:</strong> 177 Bathgoda, Danthure Kandy Srilanka</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
